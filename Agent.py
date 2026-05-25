@@ -20,7 +20,7 @@ be fully accessed, report them transparently in the summary.
 
 async def main():
     tools = await AdbTools.create()
-   agent = DroidAgent(
+    agent = DroidAgent(
         goal=GOAL,
         tools=tools,
         llm="claude-sonnet-4-20250514",  # swap with gpt-4o or gemini if needed
